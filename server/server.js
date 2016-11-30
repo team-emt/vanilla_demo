@@ -38,19 +38,4 @@ app.get('/', (req, res) => {
 });
 
 
-
-
-
-
-
-
-
-// -------------------------------------------------------
-// When we moved the Socket connection block over to server.js
-
-
-
-
-
-
-http.listen(3000, () => console.log('✌️  on 3000'));
+http.listen(process.env.PORT || 3000, () => console.log('✌️  on 3000'));
