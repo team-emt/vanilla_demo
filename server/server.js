@@ -20,7 +20,7 @@ io.on('connection', (socket) => {
     // Event listeners below 
     socket.on('event', (msg) => {
       addToDb(msg.contents);
-      socket.emit(msg.eventOut, msg.contents);
+      io.emit(msg.eventOut, msg.contents);
     });
     
   });
