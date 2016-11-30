@@ -1,14 +1,14 @@
 {
-  "name": "razorframe",
+  "name": "vanilla_demo",
   "version": "1.0.0",
-  "description": "A real-time database streaming library.",
+  "description": "Testing app for Razorframe.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/team-emt/razorframe.git"
+    "url": "git+https://github.com/team-emt/vanilla_demo"
   },
   "keywords": [
     "Node",
@@ -20,9 +20,9 @@
   "author": "Travis Huff, Eddie Park, Michael Sotkin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/team-emt/razorframe/issues"
+    "url": "https://github.com/team-emt/vanilla_demo/issues"
   },
-  "homepage": "https://github.com/team-emt/razorframe#readme",
+  "homepage": "https://github.com/team-emt/vanilla_demo",
   "dependencies": {
     "socket.io": "^1.6.0"
   }
