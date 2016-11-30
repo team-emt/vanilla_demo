@@ -1,29 +1,26 @@
 {
-  "name": "razorframe",
+  "name": "googlegram",
   "version": "1.0.0",
-  "description": "A real-time database streaming library.",
-  "main": "index.js",
+  "description": "a fantastic test app",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/team-emt/razorframe.git"
+    "url": "git+https://github.com/parkedwards/googlegram.git"
   },
-  "keywords": [
-    "Node",
-    "Express",
-    "Sockets.io",
-    "SQL",
-    "databases"
-  ],
-  "author": "Travis Huff, Eddie Park, Michael Sotkin",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/team-emt/razorframe/issues"
+    "url": "https://github.com/parkedwards/googlegram/issues"
   },
-  "homepage": "https://github.com/team-emt/razorframe#readme",
+  "homepage": "https://github.com/parkedwards/googlegram#readme",
   "dependencies": {
-    "socket.io": "^1.6.0"
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "pg": "6.1.0",
+    "socket.io": "^1.5.1"
   }
 }

@@ -13,7 +13,7 @@
       "engine": "socketio",
       "flow": [
         # {"get": {"url": "/"}},
-        {"emit": { "channel": "msgSent", "data":{ "contents": "hello", "eventOut": "msgSent", "channel": "message-channel" }}}
+        {"emit": { "channel": "event", "data":{ "contents": "hello", "eventOut": "sent", "channel": "message-channel" }}}
       ]
     }
   ]
