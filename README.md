@@ -1,10 +1,3 @@
-# razorframe
-Node library to empower real-time, streaming databases 
+# vanilla_demo
+A razorframe-less chat app
 
-```   
-by {  
-  .travis huff  
-  .eddie park  
-  .michael sotkin  
-}
-```   
