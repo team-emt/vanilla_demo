@@ -1,22 +1,22 @@
 {
   "name": "vanilla_demo",
   "version": "1.0.0",
-  "description": "a fantastic test app",
-  "main": "app.js",
+  "description": "Testing app for Razorframe.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/parkedwards/googlegram.git"
+    "url": "git+https://github.com/team-emt/vanilla_demo"
   },
-  "author": "",
+  "author": "Travis Huff, Eddie Park, Michael Sotkin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/parkedwards/googlegram/issues"
+    "url": "https://github.com/team-emt/vanilla_demo/issues"
   },
-  "homepage": "https://github.com/parkedwards/googlegram#readme",
+  "homepage": "https://github.com/team-emt/vanilla_demo",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
