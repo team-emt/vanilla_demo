@@ -1,9 +1,9 @@
 {
   "config": {
-    "target": "https://googlegram.herokuapp.com/",
+    "target": "https://vanillademo.herokuapp.com/",
     "phases": [
-      # {"duration": 60, "arrivalRate": 5},
-      {"duration": 120, "arrivalRate": 5, "rampTo": 50},
+      {"duration": 60, "arrivalRate": 5},
+      # {"duration": 120, "arrivalRate": 5, "rampTo": 50},
       # {"duration": 600, "arrivalRate": 50}
     ]
   },
@@ -13,7 +13,7 @@
       "engine": "socketio",
       "flow": [
         # {"get": {"url": "/"}},
-        {"emit": { "channel": "event", "data":{ "contents": "hello", "eventOut": "sent", "channel": "message-channel" }}}
+        {"emit": { "channel": "event", "data":{ "contents": "hello!", "eventOut": "sent", "channel": "message-channel" }}}
       ]
     }
   ]
