@@ -1,11 +1,17 @@
 {
   "config": {
-    "target": "https://vanillademo.herokuapp.com/",
+    # "target": "http://localhost:3000",
+    "target": "http://sample-env-1.ggydansudp.us-west-2.elasticbeanstalk.com",
     "phases": [
-      {"duration": 30, "arrivalRate": 1},
+      {"duration": 60, "arrivalRate": 20},
       # {"duration": 120, "arrivalRate": 5, "rampTo": 50},
       # {"duration": 600, "arrivalRate": 50}
-    ]
+    ],
+    "payload": {
+      "path": "data.csv",
+      "fields": ["increment"],
+      "order": "sequence"
+    }
   },
   "scenarios": [
     {
@@ -13,7 +19,7 @@
       "engine": "socketio",
       "flow": [
         # {"get": {"url": "/"}},
-        {"emit": { "channel": "event", "data":{ "contents": "hello!", "eventOut": "sent", "channel": "message-channel" }}}
+        {"emit": { "channel": "event", "data":{ "contents": "{{increment}}", "eventOut": "sent", "channel": "channel-name" }}}
       ]
     }
   ]
