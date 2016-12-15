@@ -4,12 +4,12 @@ module.exports = {
 
   addToDb: (text) => {
     console.log('req.body.text : ', text);
-
+    let stringText = JSON.stringify(text);
     db.conn.query(`
     INSERT INTO events 
     (_id, string )
     VALUES 
-    (default, '${text}')
+    (default, '${stringText}')
     `, (err, result) => {
         if (err) throw new Error(err);
         console.log('row added.');

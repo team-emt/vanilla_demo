@@ -9,7 +9,7 @@ let node, textNode;
 socket.on('dbOnLoad', (data) => {
   data.reverse().forEach(item => {
     node = document.createElement('LI');
-    textNode = document.createTextNode(item);
+    textNode = document.createTextNode(JSON.parse(item));
     node.appendChild(textNode);
     chatMsg.appendChild(node);
   });
